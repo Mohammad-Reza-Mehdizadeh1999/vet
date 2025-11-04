@@ -12,7 +12,7 @@ export default function SignInPanel({ onSwitch }: SignInPanelProps) {
       </p>
       <button
         onClick={onSwitch}
-        className="px-6 py-2 bg-white/50 hover:bg-white/20 dark:bg-gray-700/50 dark:hover:bg-gray-700/80 rounded-md transition text-black dark:text-white"
+        className="px-6 py-2 bg-white/50 hover:bg-white/20 dark:bg-white/20 dark:hover:bg-white/5 rounded-md transition text-black dark:text-white"
       >
         Sign In
       </button>
