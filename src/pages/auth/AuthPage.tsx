@@ -43,7 +43,7 @@ export default function AuthPage() {
 
 
           <div
-            className="w-1/2 h-full flex flex-col justify-center items-center gap-3 p-10 bg-white/5 dark:bg-black/10 border-l
+            className="w-1/2 h-full flex flex-col justify-center items-center gap-3 p-10 bg-white/5 dark:bg-white/15 border-l
                      border-white/10 dark:border-gray-700/30 transition-all duration-700 ease-in-out text-black dark:text-white"
             style={{
               transform: isSignIn ? 'translateX(0)' : 'translateX(100%)',
@@ -58,7 +58,7 @@ export default function AuthPage() {
             </p>
             <button
               onClick={() => setIsSignIn(false)}
-              className="px-6 py-2 bg-white/50 hover:bg-white/20 dark:bg-gray-700/50 dark:hover:bg-gray-700/80 rounded-md transition text-black dark:text-white"
+              className="px-6 py-2 bg-white/50 hover:bg-white/20 dark:bg-white/20 dark:hover:bg-white/5 rounded-md transition text-black dark:text-white"
             >
               Sign Up
             </button>
@@ -66,7 +66,7 @@ export default function AuthPage() {
 
 
           <div
-            className="w-1/2 h-full flex flex-col justify-center items-center p-10 transition-all duration-700 ease-in-out absolute top-0 left-0"
+            className="w-1/2 h-full flex flex-col gap-3 justify-center items-center p-10 transition-all duration-700 ease-in-out absolute top-0 left-0"
             style={{
               transform: isSignIn ? 'translateX(-100%)' : 'translateX(0)',
               opacity: isSignIn ? 0 : 1,
