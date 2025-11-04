@@ -1,4 +1,3 @@
-// src/components/auth/SignInPanel.tsx
 interface SignInPanelProps {
   onSwitch: () => void;
 }

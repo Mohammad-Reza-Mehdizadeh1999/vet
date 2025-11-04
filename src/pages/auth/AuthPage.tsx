@@ -16,7 +16,7 @@ export default function AuthPage() {
       }}
     >
       <div className="w-[850px] h-[500px] bg-white/10 dark:bg-black/10 backdrop-blur-md rounded-2xl shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] border border-white/10 dark:border-gray-700/30 overflow-hidden relative">
-        {/* کانتینر اسلاید دو صفحه */}
+
         <div
           className="flex transition-transform duration-700 ease-in-out h-full"
           style={{
@@ -24,29 +24,32 @@ export default function AuthPage() {
             width: "200%",
           }}
         >
-          {/* 🔹 صفحه ۱: Sign In — (فرم چپ | پنل راست) */}
+
           <div className="w-1/2 h-full flex shrink-0">
-            {/* فرم ورود */}
+
             <div className="w-1/2 h-full flex flex-col justify-center items-center p-10">
               <SignInForm />
             </div>
-            {/* پنل Sign Up */}
+
             <div className="w-1/2 h-full flex flex-col justify-center items-center p-10 bg-white/5 dark:bg-white/15 border-l border-white/10 dark:border-gray-700/30">
               <SignUpPanel onSwitch={() => setIsSignIn(false)} />
             </div>
+
           </div>
 
-          {/* 🔹 صفحه ۲: Sign Up — (پنل چپ | فرم راست) */}
+
           <div className="w-1/2 h-full flex shrink-0">
-            {/* پنل Sign In */}
+
             <div className="w-1/2 h-full flex flex-col justify-center items-center p-10 bg-white/5 dark:bg-white/15 border-r border-white/10 dark:border-gray-700/30">
               <SignInPanel onSwitch={() => setIsSignIn(true)} />
             </div>
-            {/* فرم ثبت‌نام */}
+
             <div className="w-1/2 h-full flex flex-col justify-center items-center p-10">
               <SignUpForm />
             </div>
+
           </div>
+          
         </div>
       </div>
     </div>
