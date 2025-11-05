@@ -19,7 +19,7 @@ export default function SignUpForm() {
 
   const onSubmit = (data: SignUpFormData) => {
     console.log("Form Data:", data);
-    // اینجا می‌تونید API call انجام بدید
+
   };
 
   return (
