@@ -4,7 +4,7 @@ interface SignUpPanelProps {
 
 export default function SignUpPanel({ onSwitch }: SignUpPanelProps) {
   return (
-    <>
+    <div className="text-center">
       <h2 className="text-3xl font-semibold mb-4">Hello, Friend</h2>
       <p className="text-center mb-6">
         Enter your personal details and start your journey with us
@@ -15,6 +15,6 @@ export default function SignUpPanel({ onSwitch }: SignUpPanelProps) {
       >
         Sign Up
       </button>
-    </>
+    </div>
   );
 }

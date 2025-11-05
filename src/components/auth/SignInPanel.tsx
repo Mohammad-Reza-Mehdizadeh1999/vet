@@ -4,9 +4,9 @@ interface SignInPanelProps {
 
 export default function SignInPanel({ onSwitch }: SignInPanelProps) {
   return (
-    <>
-      <h2 className="text-3xl font-semibold mb-4">Welcome Back!</h2>
-      <p className="text-center mb-6">
+    <div className="text-center">
+      <h2 className="text-3xl font-semibold ">Welcome Back!</h2>
+      <p className="text-center py-4 md:py-7">
         To keep connected with us, please login with your personal info
       </p>
       <button
@@ -15,6 +15,6 @@ export default function SignInPanel({ onSwitch }: SignInPanelProps) {
       >
         Sign In
       </button>
-    </>
+    </div>
   );
 }
