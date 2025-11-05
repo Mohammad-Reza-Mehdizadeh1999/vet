@@ -20,17 +20,17 @@ export default function AuthPage() {
         <div className="md:hidden flex flex-col h-full">
           {isSignIn ? (
             <div className="w-full p-6">
-              <SignInForm />
-              <div className="mt-6 pt-6 border-t border-white/10">
+              <div className="mb-6 pb-6 border-b border-white/10">
                 <SignUpPanel onSwitch={() => setIsSignIn(false)} />
               </div>
+              <SignInForm />
             </div>
           ) : (
             <div className="w-full p-6">
-              <SignUpForm />
-              <div className="mt-6 pt-6 border-t border-white/10">
+              <div className="mb-6 pb-6 border-b border-white/10">
                 <SignInPanel onSwitch={() => setIsSignIn(true)} />
               </div>
+              <SignUpForm />
             </div>
           )}
         </div>
